@@ -10,8 +10,6 @@ const NAVS = [
 ];
 
 const Header = ({ data }) => {
-  if (!data) return null;
-
   const {
     name,
     occupation,

@@ -1,8 +1,6 @@
 import React from "react";
 
 const About = ({ data }) => {
-  if (!data) return null;
-
   const {
     name,
     image,
