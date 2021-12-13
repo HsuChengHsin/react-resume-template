@@ -1,46 +1,44 @@
 {
   "main": {
-    "name": "Tim Baker",
-    "occupation": "(Your Occupation Here)",
-    "description": "Here will be your description. Use this to describe what you do or whatever you feel best describes yourself to a potential employer",
+    "name": "Angus Hsu",
+    "occupation": "Software engineer",
+    "description": "I'm an experienced software engineer who constantly seeks out innovative solutions to everyday problems. In my years in this industry, I've honed my analytical thinking and collaboration skills, and I love working with a team.",
     "image": "profilepic.jpg",
     "bio": "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
     "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
-    "email": "youremailhere@gmail.com",
-    "phone": "555-555-5555",
+    "email": "apangus611@gmail.com",
+    "phone": "+886-918540249",
     "address": {
-      "street": "(Your Street)",
-      "city": "(Your City)",
-      "state": "(Your State)",
-      "zip": "(Your Zip/Postal Code)"
+      "city": "Taipei (Taiwan)",
+      "zip": "234"
     },
-    "website": "http://www.timbakerdev.com",
+    "website": "https://www.angushsu.me",
     "resumedownload": "http://timbakerdev.com",
     "social": [
       {
         "name": "facebook",
-        "url": "http://facebook.com/tim.baker.906",
-        "className": "fa fa-facebook"
-      },
-      {
-        "name": "twitter",
-        "url": "http://twitter.com",
-        "className": "fa fa-twitter"
+        "url": "https://www.facebook.com/profile.php?id=100000199500122",
+        "className": "fab fa-facebook"
       },
       {
         "name": "linkedin",
-        "url": "https://www.linkedin.com/in/tim-baker-8420009a/",
-        "className": "fa fa-linkedin"
-      },
-      {
-        "name": "instagram",
-        "url": "http://instagram.com/tbaker_x",
-        "className": "fa fa-instagram"
+        "url": "https://www.linkedin.com/in/angushsu611/",
+        "className": "fab fa-linkedin"
       },
       {
         "name": "github",
-        "url": "http://github.com/tbakerx",
-        "className": "fa fa-github"
+        "url": "https://github.com/AngusHsu",
+        "className": "fab fa-github"
+      },
+      {
+        "name": "mail",
+        "url": "mailto:apangus611@gmail.com",
+        "className": "fa fa-envelope"
+      },
+      {
+        "name": "medium",
+        "url": "https://medium.com/@apangus611",
+        "className": "fab fa-medium-m"
       }
     ]
   },
@@ -48,16 +46,14 @@
     "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
     "education": [
       {
-        "school": "University?",
-        "degree": "Masters in Beer tasting",
-        "graduated": "April 2007",
-        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school": "National Taiwan University",
+        "degree": "Communication engineering (Master degree)",
+        "graduated": "Sep 2020"
       },
       {
-        "school": "School #1 Maybe College?",
-        "degree": "What did you study 101",
-        "graduated": "March 2003",
-        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school": "National Chung Cheng University",
+        "degree": "Communication engineering (Bachelor degree)",
+        "graduated": "Jun 2016"
       }
     ],
     "work": [
@@ -77,65 +73,37 @@
     "skills": [
       {
         "name": "Git",
-        "level": "60%"
+        "level": "80%"
       },
       {
-        "name": "Illustrator",
-        "level": "55%"
+        "name": "Python",
+        "level": "75%"
       },
       {
         "name": "ReactJs",
-        "level": "50%"
+        "level": "90%"
       },
       {
         "name": "CSS",
-        "level": "90%"
+        "level": "80%"
       },
       {
         "name": "HTML5",
         "level": "80%"
       },
       {
-        "name": "VueJs",
-        "level": "50%"
-      },
-      {
-        "name": "MongoDB",
-        "level": "80%"
+        "name": "Postgresql",
+        "level": "70%"
       }
     ]
   },
   "portfolio": {
     "projects": [
       {
-        "title": "Canadian Wanderlust",
-        "category": "My Travel Blog for my post-university travels",
-        "image": "canadian-wanderlust.jpg",
-        "url": "https://www.canadianwanderlust.com"
-      },
-      {
-        "title": "Fury Fighting Gear",
-        "category": "(offline now) A fighting gear company I started",
-        "image": "fury-fighting-gear.jpg",
-        "url": "http://www.timbakerdev.com"
-      },
-      {
-        "title": "Original Thai Food",
-        "category": "Website I built for a restaurant I like in Thailand",
-        "image": "original-thai-food.jpg",
-        "url": "http://www.timbakerdev.com/originalthaifood.github.io"
-      },
-      {
-        "title": "Resume Website",
-        "category": "A React based resume website template",
-        "image": "resume-website.jpg",
-        "url": "http://www.timbakerdev.com"
-      },
-      {
-        "title": "Smirkspace",
-        "category": "(MVP Only) A React and Meteor based chat University project.",
-        "image": "smirkspace.jpg",
-        "url": "http://www.smirkspace.com"
+        "title": "EMQQQ",
+        "category": "Useful linebot for daily life",
+        "image": "emqqq.jpeg",
+        "url": "https://lin.ee/PxMCLz6"
       }
     ]
   },
