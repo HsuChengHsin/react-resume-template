@@ -122,4 +122,7 @@ export const resumeData = {
       },
     ],
   },
+  medium: {
+    username: "apangus611",
+  },
 };

@@ -7,6 +7,7 @@ import About from "./Components/About";
 import Resume from "./Components/Resume";
 import Contact from "./Components/Contact";
 import Testimonials from "./Components/Testimonials";
+import Medium from "./Components/Medium";
 import Portfolio from "./Components/Portfolio";
 import { resumeData } from "./resumeData";
 
@@ -20,6 +21,7 @@ const App = () => {
           <Resume data={resumeData.resume} />
           <Portfolio data={resumeData.portfolio} />
           <Testimonials data={resumeData.testimonials} />
+          <Medium username={resumeData.medium.username} />
           <Contact data={resumeData.main} />
           <Footer data={resumeData.main} />
         </Fragment>
