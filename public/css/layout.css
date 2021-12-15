@@ -281,6 +281,16 @@ ul#nav li.current a { color: #F06000; }
    margin-top: 6px;
 }
 
+#resume .work-description:before {
+    content: "\A";
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background: black;
+    display:inline-block;
+    margin-right: 1rem;
+}
+
 /*----------------------------------------------*/
 /*	Skill Bars
 /*----------------------------------------------*/

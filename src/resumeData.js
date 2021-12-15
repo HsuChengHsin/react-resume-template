@@ -61,18 +61,16 @@ export const resumeData = {
     ],
     work: [
       {
-        company: "Awesome Design Studio",
-        title: "Senior UX God ",
-        years: "March 2010 - Present",
-        description:
-          "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know.",
-      },
-      {
-        company: "Super Cool Studio",
-        title: "Junior bug fixer",
-        years: "March 2007 - February 2010",
-        description:
-          "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know.",
+        company: "EMQ",
+        title: "Software developer",
+        years: "Aug 2019 - Present",
+        description: [
+          "Collaborate with Back-End engineers to integrate new functionalities.",
+          "Actively participate in UI/UX decisions and UI components.",
+          "Build scalable, reliable, and secure web applications.",
+          "Build complex front-end logic, caching, synchronization, performance optimization.",
+          "Write software to improve web app reliability (unit tests, automated testing, e2e testing).",
+        ],
       },
     ],
     skills: [
