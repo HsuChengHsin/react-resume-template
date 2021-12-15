@@ -46,7 +46,9 @@ const Resume = ({ data }) => {
                 <span>&bull;</span> <em className="date">{years}</em>
               </p>
               {description.map((d) => (
-                <div className="work-description">{d}</div>
+                <div key={d} className="work-description">
+                  {d}
+                </div>
               ))}
             </div>
           ))}

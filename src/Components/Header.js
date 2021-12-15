@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 
 const NAVS = [
-  { label: "Home", hash: "#home", current: true },
-  { label: "About", hash: "#about", current: false },
-  { label: "Resume", hash: "#resume", current: false },
-  { label: "Works", hash: "#portfolio", current: false },
-  { label: "Testimonials", hash: "#testimonials", current: false },
-  { label: "Contact", hash: "#contact", current: false },
+  { label: "Home", hash: "#home" },
+  { label: "About", hash: "#about" },
+  { label: "Resume", hash: "#resume" },
+  { label: "Works", hash: "#portfolio" },
+  { label: "Testimonials", hash: "#testimonials" },
+  { label: "Contact", hash: "#contact" },
 ];
 
 const Header = ({ data }) => {
+  const [currentClick, setCurrentClick] = useState(
+    window.location.hash || "#home"
+  );
   const {
     name,
     occupation,
@@ -29,9 +32,16 @@ const Header = ({ data }) => {
         </a>
 
         <ul id="nav" className="nav">
-          {NAVS.map(({ label, hash, current }) => (
-            <li className={current && "current"} key={label}>
-              <a className="smoothscroll" href={hash}>
+          {NAVS.map(({ label, hash }) => (
+            <li
+              className={currentClick === hash ? "current" : null}
+              key={label}
+            >
+              <a
+                className="smoothscroll"
+                href={hash}
+                onClick={() => setCurrentClick(hash)}
+              >
                 {label}
               </a>
             </li>
