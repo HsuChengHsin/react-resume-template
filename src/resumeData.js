@@ -46,7 +46,7 @@ export const resumeData = {
   },
   resume: {
     skillMessage:
-      "Here you can create a short write-up of your skills to show off to employers",
+      "Test123 dasas dsadsgfiygaif gdfg isdugaf iudgoiagdfiaoiufoidafuasidfiaofugaoisfgaui",
     education: [
       {
         school: "National Taiwan University",

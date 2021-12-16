@@ -800,6 +800,30 @@ call-to-action .button {
 }
 
 /* ------------------------------------------------------------------ */
+/* h. Medium Section
+/* ------------------------------------------------------------------ */
+
+#medium {
+   padding-top: 3rem;
+   padding-bottom: 4rem;
+   color: #636363;
+}
+
+#medium .section-head { margin-bottom: 6rem; }
+#medium h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   color: #090808;
+   margin-bottom: 6px;
+}
+
+#medium h1 span {
+   border-bottom: 3px solid #11ABB0;
+   padding-bottom: 6px;
+}
+
+/* ------------------------------------------------------------------ */
 /* h. Contact Section
 /* ------------------------------------------------------------------ */
 
@@ -917,25 +941,6 @@ call-to-action .button {
 }
 
 
-/* Twitter Feed */
-#twitter {
-   margin-top: 12px;
-   padding: 0;
-}
-#twitter li {
-   margin: 6px 0px 12px 0;
-   line-height: 30px;
-}
-#twitter li span {
-   display: block;
-}
-#twitter li b a {
-   font: 13px/36px 'opensans-regular', Sans-serif;
-   color: #474747 !important;
-   border: none;
-}
-
-
 /* ------------------------------------------------------------------ */
 /* i. Footer
 /* ------------------------------------------------------------------ */
@@ -991,6 +996,10 @@ footer .social-links li {
 }
 
 footer .social-links li:first-child { margin-left: 0; }
+
+footer .social-links :hover {
+   color: grey;
+}
 
 /* Go To Top Button */
 #go-top {
