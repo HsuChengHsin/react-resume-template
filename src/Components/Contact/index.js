@@ -1,121 +1,119 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 
-class Contact extends Component {
-  render() {
-    if (this.props.data) {
-      var name = this.props.data.name;
-      var street = this.props.data.address.street;
-      var city = this.props.data.address.city;
-      var state = this.props.data.address.state;
-      var zip = this.props.data.address.zip;
-      var phone = this.props.data.phone;
-      var email = this.props.data.email;
-      var message = this.props.data.contactmessage;
-    }
+import { Button, Form } from "semantic-ui-react";
 
-    return (
-      <section id="contact">
-        <div className="row section-head">
-          <div className="two columns header-col">
-            <h1>
-              <span>Get In Touch.</span>
-            </h1>
-          </div>
+const FULL_WIDTH = { width: "100%" };
 
-          <div className="ten columns">
-            <p className="lead">{message}</p>
-          </div>
+const Contact = ({ data }) => {
+  const [contact, setContact] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const handleChange = (e, { name, value }) =>
+    setContact((prev) => {
+      return { ...prev, [name]: value };
+    });
+  const handleSubmit = () => console.log(contact);
+  const {
+    name,
+    address: { city, zip },
+    phone,
+    contactMessage: message,
+  } = data;
+  return (
+    <section id="contact">
+      <div className="row section-head">
+        <div className="two columns header-col">
+          <h1>
+            <span>Get In Touch.</span>
+          </h1>
         </div>
 
-        <div className="row">
-          <div className="eight columns">
-            <form action="" method="post" id="contactForm" name="contactForm">
-              <fieldset>
-                <div>
-                  <label htmlFor="contactName">
-                    Name <span className="required">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    defaultValue=""
-                    size="35"
-                    id="contactName"
-                    name="contactName"
-                    onChange={this.handleChange}
-                  />
-                </div>
+        <div className="ten columns">
+          <p className="lead">{message}</p>
+        </div>
+      </div>
 
-                <div>
-                  <label htmlFor="contactEmail">
-                    Email <span className="required">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    defaultValue=""
-                    size="35"
-                    id="contactEmail"
-                    name="contactEmail"
-                    onChange={this.handleChange}
-                  />
-                </div>
+      <div className="row">
+        <div className="eight columns">
+          <Form onSubmit={handleSubmit}>
+            <Form.Field required>
+              <label>Name</label>
+              <Form.Input
+                style={FULL_WIDTH}
+                type="text"
+                id="name"
+                name="name"
+                value={contact.name}
+                onChange={handleChange}
+              />
+            </Form.Field>
+            <Form.Field required>
+              <label>Email</label>
+              <Form.Input
+                style={FULL_WIDTH}
+                type="text"
+                id="email"
+                name="email"
+                value={contact.email}
+                onChange={handleChange}
+              />
+            </Form.Field>
+            <Form.Field required>
+              <label>Subject</label>
+              <Form.Input
+                style={FULL_WIDTH}
+                type="text"
+                id="subject"
+                name="subject"
+                value={contact.subject}
+                onChange={handleChange}
+              />
+            </Form.Field>
+            <Form.Field required>
+              <label>Message</label>
+              <Form.TextArea
+                style={FULL_WIDTH}
+                type="text"
+                id="message"
+                name="message"
+                value={contact.message}
+                onChange={handleChange}
+              />
+            </Form.Field>
+            <Button
+              className="submit float-right"
+              type="submit"
+              loading={false}
+            >
+              Submit
+            </Button>
+          </Form>
 
-                <div>
-                  <label htmlFor="contactSubject">Subject</label>
-                  <input
-                    type="text"
-                    defaultValue=""
-                    size="35"
-                    id="contactSubject"
-                    name="contactSubject"
-                    onChange={this.handleChange}
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="contactMessage">
-                    Message <span className="required">*</span>
-                  </label>
-                  <textarea
-                    cols="50"
-                    rows="15"
-                    id="contactMessage"
-                    name="contactMessage"
-                  />
-                </div>
-
-                <div>
-                  <button className="submit">Submit</button>
-                  <span id="image-loader">
-                    <img alt="" src="images/loader.gif" />
-                  </span>
-                </div>
-              </fieldset>
-            </form>
-
-            <div id="message-warning"> Error boy</div>
-            <div id="message-success">
-              <i className="fa fa-check" />
-              Your message was sent, thank you!
+          <div id="message-warning">Error boy</div>
+          <div id="message-success">
+            <i className="fa fa-check" />
+            Your message was sent, thank you!
+            <br />
+          </div>
+        </div>
+        <aside className="four columns footer-widgets">
+          <div className="widget widget_contact">
+            <h4>Address and Phone</h4>
+            <p className="address">
+              {name}
               <br />
-            </div>
+              {city}, {zip}
+              <br />
+              <span>{phone}</span>
+            </p>
           </div>
-          <aside className="four columns footer-widgets">
-            <div className="widget widget_contact">
-              <h4>Address and Phone</h4>
-              <p className="address">
-                {name}
-                <br />
-                {street} <br />
-                {city}, {state} {zip}
-                <br />
-                <span>{phone}</span>
-              </p>
-            </div>
-          </aside>
-        </div>
-      </section>
-    );
-  }
-}
+        </aside>
+      </div>
+    </section>
+  );
+};
 
 export default Contact;

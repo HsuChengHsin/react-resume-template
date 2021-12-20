@@ -1,4 +1,6 @@
 import React from "react";
+import { Loader } from "semantic-ui-react";
+
 import { useMedium } from "./hooks";
 import CustCard from "./CustCard";
 
@@ -8,10 +10,8 @@ const Medium = ({ username }) => {
     isFetched,
   } = useMedium(username);
 
-  console.log(items);
-
   if (!isFetched) {
-    return null;
+    return <Loader active inline="centered" />;
   }
 
   return (

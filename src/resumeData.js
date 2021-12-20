@@ -6,7 +6,7 @@ export const resumeData = {
       "I'm an experienced software engineer who constantly seeks out innovative solutions to everyday problems. In my years in this industry, I've honed my analytical thinking and collaboration skills, and I love working with a team.",
     image: "angus-self.jpg",
     bio: "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
-    contactmessage:
+    contactMessage:
       "Here is where you should write your message to readers to have them get in contact with you.",
     email: "apangus611@gmail.com",
     phone: "+886-918540249",
