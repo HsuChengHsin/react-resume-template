@@ -3,11 +3,11 @@ export const resumeData = {
     name: "Angus Hsu",
     occupation: "Software engineer",
     description:
-      "I'm an experienced software engineer who constantly seeks out innovative solutions to everyday problems. In my years in this industry, I've honed my analytical thinking and collaboration skills, and I love working with a team.",
+      "I'm an experienced software engineer who constantly seeks out innovative solutions to everyday problems. In my years in this industry, I've honed my analytical thinking and collaboration skills, and I love working with a team",
     image: "angus-self.jpg",
-    bio: "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
+    bio: "I'm an experienced software engineer who constantly seeks out innovative solutions to everyday problems. In my years in this industry, I've honed my analytical thinking and collaboration skills, and I love working with a team.",
     contactMessage:
-      "Here is where you should write your message to readers to have them get in contact with you.",
+      "Please contact me if you've any interest in what I've post here!!",
     email: "apangus611@gmail.com",
     phone: "+886-918540249",
     address: {
@@ -15,7 +15,6 @@ export const resumeData = {
       zip: "234",
     },
     website: "https://www.angushsu.me",
-    resumedownload: "http://timbakerdev.com",
     social: [
       {
         name: "facebook",
@@ -45,8 +44,7 @@ export const resumeData = {
     ],
   },
   resume: {
-    skillMessage:
-      "Test123 dasas dsadsgfiygaif gdfg isdugaf iudgoiagdfiaoiufoidafuasidfiaofugaoisfgaui",
+    skillMessage: "",
     education: [
       {
         school: "National Taiwan University",
@@ -70,6 +68,43 @@ export const resumeData = {
           "Build scalable, reliable, and secure web applications.",
           "Build complex front-end logic, caching, synchronization, performance optimization.",
           "Write software to improve web app reliability (unit tests, automated testing, e2e testing).",
+        ],
+      },
+      {
+        company: "EMQ",
+        title: "Operation team lead",
+        years: "Dec 2018 - Jul 2019",
+        description: [
+          "Work with the team to develop, improve, and execute operational processes & procedures.",
+          "Work closely with our Network team to understand new partner integrations, define the processes & procedures & improve ongoing integrations.",
+          "Collaborate with other teams to drive system improvements that help us deliver results quicker.",
+          "Drive resolutions to complicated incidents.",
+          "Execute daily processes resolving any incidents efficiently.",
+          "Mentor, guide and train junior staff members.",
+        ],
+      },
+      {
+        company: "EMQ",
+        title: "Operation assistant",
+        years: "Jun 2018 - Dec 2018",
+        description: [
+          "Work with the team to develop, improve, and execute operational processes & procedures.",
+          "Work closely with our Network team to understand new partner integrations, define the processes & procedures & improve ongoing integrations.",
+          "Collaborate with other teams to drive system improvements that help us deliver results quicker.",
+          "Drive resolutions to complicated incidents.",
+          "Execute daily processes resolving any incidents efficiently.",
+        ],
+      },
+      {
+        company: "EMQ",
+        title: "Operation assistant intern",
+        years: "Oct 2016 - Jun 2018",
+        description: [
+          "Work with the team to develop, improve, and execute operational processes & procedures.",
+          "Work closely with our Network team to understand new partner integrations, define the processes & procedures & improve ongoing integrations.",
+          "Collaborate with other teams to drive system improvements that help us deliver results quicker.",
+          "Drive resolutions to complicated incidents.",
+          "Execute daily processes resolving any incidents efficiently.",
         ],
       },
     ],

@@ -5,7 +5,7 @@ const NAVS = [
   { label: "About", hash: "#about" },
   { label: "Resume", hash: "#resume" },
   { label: "Works", hash: "#portfolio" },
-  { label: "Testimonials", hash: "#testimonials" },
+  { label: "Medium", hash: "#medium" },
   { label: "Contact", hash: "#contact" },
 ];
 

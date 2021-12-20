@@ -36,10 +36,9 @@ const Resume = ({ data }) => {
             <span>Work</span>
           </h1>
         </div>
-
         <div className="nine columns main-col">
           {work.map(({ company, description, years, title }) => (
-            <div key={company}>
+            <div key={company} className="my-10">
               <h3>{company}</h3>
               <p className="info">
                 {title}

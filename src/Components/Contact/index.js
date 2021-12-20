@@ -1,21 +1,51 @@
 import React, { useState } from "react";
 
+import emailjs from "emailjs-com";
 import { Button, Form } from "semantic-ui-react";
 
 const FULL_WIDTH = { width: "100%" };
+const EMPTY_CONTENT = {
+  name: "",
+  email: "",
+  subject: "",
+  message: "",
+};
 
+const wait = (ms) => new Promise((resolve) => setTimeout(() => resolve(), ms));
 const Contact = ({ data }) => {
-  const [contact, setContact] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
+  const [success, setSuccess] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [contact, setContact] = useState(EMPTY_CONTENT);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (
+      !contact.name ||
+      !contact.email ||
+      !contact.subject ||
+      !contact.message
+    ) {
+      alert("Missing something to submit!!");
+      return;
+    }
+    try {
+      setSubmitting(true);
+      await wait(3000);
+      await emailjs.send(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        contact,
+        process.env.REACT_APP_USER_ID
+      );
+      setSubmitting(false);
+      setSuccess(true);
+      setTimeout(() => setSuccess(false), 3000);
+      setContact(EMPTY_CONTENT);
+    } catch (e) {}
+  };
   const handleChange = (e, { name, value }) =>
     setContact((prev) => {
       return { ...prev, [name]: value };
     });
-  const handleSubmit = () => console.log(contact);
   const {
     name,
     address: { city, zip },
@@ -38,11 +68,10 @@ const Contact = ({ data }) => {
 
       <div className="row">
         <div className="eight columns">
-          <Form onSubmit={handleSubmit}>
+          <Form onSubmit={handleSubmit} loading={submitting}>
             <Form.Field required>
               <label>Name</label>
               <Form.Input
-                style={FULL_WIDTH}
                 type="text"
                 id="name"
                 name="name"
@@ -53,7 +82,6 @@ const Contact = ({ data }) => {
             <Form.Field required>
               <label>Email</label>
               <Form.Input
-                style={FULL_WIDTH}
                 type="text"
                 id="email"
                 name="email"
@@ -64,7 +92,6 @@ const Contact = ({ data }) => {
             <Form.Field required>
               <label>Subject</label>
               <Form.Input
-                style={FULL_WIDTH}
                 type="text"
                 id="subject"
                 name="subject"
@@ -86,18 +113,20 @@ const Contact = ({ data }) => {
             <Button
               className="submit float-right"
               type="submit"
-              loading={false}
+              loading={submitting}
+              onClick={handleSubmit}
             >
               Submit
             </Button>
           </Form>
 
-          <div id="message-warning">Error boy</div>
-          <div id="message-success">
-            <i className="fa fa-check" />
-            Your message was sent, thank you!
-            <br />
-          </div>
+          {success && (
+            <div>
+              <i className="fa fa-check" />
+              Your message was sent, thank you!
+              <br />
+            </div>
+          )}
         </div>
         <aside className="four columns footer-widgets">
           <div className="widget widget_contact">

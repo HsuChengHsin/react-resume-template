@@ -1,14 +1,15 @@
 import React from "react";
 
+import resume from "./resume.pdf";
+
 const About = ({ data }) => {
   const {
     name,
     image,
     bio,
-    address: { street, city, state, zip },
+    address: { city, zip },
     phone,
     email,
-    resumeDownload,
   } = data;
   const profilePic = `images/${image}`;
 
@@ -24,7 +25,6 @@ const About = ({ data }) => {
         </div>
         <div className="nine columns main-col">
           <h2>About Me</h2>
-
           <p>{bio}</p>
           <div className="row">
             <div className="columns contact-details">
@@ -33,9 +33,7 @@ const About = ({ data }) => {
                 <span>{name}</span>
                 <br />
                 <span>
-                  {street}
-                  <br />
-                  {city} {state}, {zip}
+                  {city}, {zip}
                 </span>
                 <br />
                 <span>{phone}</span>
@@ -45,7 +43,7 @@ const About = ({ data }) => {
             </div>
             <div className="columns download">
               <p>
-                <a href={resumeDownload} className="button">
+                <a href={resume} className="button" download="resume.pdf">
                   <i className="fa fa-download" />
                   Download Resume
                 </a>
