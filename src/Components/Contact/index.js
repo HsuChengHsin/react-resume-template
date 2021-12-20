@@ -11,7 +11,6 @@ const EMPTY_CONTENT = {
   message: "",
 };
 
-const wait = (ms) => new Promise((resolve) => setTimeout(() => resolve(), ms));
 const Contact = ({ data }) => {
   const [success, setSuccess] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -29,7 +28,6 @@ const Contact = ({ data }) => {
     }
     try {
       setSubmitting(true);
-      await wait(3000);
       await emailjs.send(
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,
