@@ -11,7 +11,6 @@ const About = ({ data }) => {
     phone,
     email,
   } = data;
-  const profilePic = `images/${image}`;
 
   return (
     <section id="about">
@@ -19,13 +18,15 @@ const About = ({ data }) => {
         <div className="three columns">
           <img
             className="profile-pic"
-            src={profilePic}
-            alt="Tim Baker Profile Pic"
+            src={`images/${image}`}
+            alt="Angus Hsu Profile Pic"
           />
         </div>
         <div className="nine columns main-col">
-          <h2>About Me</h2>
-          <p>{bio}</p>
+          <div className="my-10">
+            <h2>About Me</h2>
+            <p>{bio}</p>
+          </div>
           <div className="row">
             <div className="columns contact-details">
               <h2>Contact Details</h2>

@@ -37,11 +37,7 @@ const Header = ({ data }) => {
               className={currentClick === hash ? "current" : null}
               key={label}
             >
-              <a
-                className="smoothscroll"
-                href={hash}
-                onClick={() => setCurrentClick(hash)}
-              >
+              <a href={hash} onClick={() => setCurrentClick(hash)}>
                 {label}
               </a>
             </li>
@@ -69,7 +65,7 @@ const Header = ({ data }) => {
       </div>
 
       <p className="scrolldown">
-        <a className="smoothscroll" href="#about">
+        <a className="smoothscroll" href="/#about">
           <i className="icon-down-circle" />
         </a>
       </p>

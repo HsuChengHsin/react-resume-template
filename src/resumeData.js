@@ -114,7 +114,7 @@ export const resumeData = {
         level: "80%",
       },
       {
-        name: "Python",
+        name: "Flask",
         level: "75%",
       },
       {
@@ -140,8 +140,14 @@ export const resumeData = {
       {
         title: "EMQQQ",
         category: "Useful linebot for daily life",
-        image: "emqqq.jpeg",
+        image: "emqqq.png",
         url: "https://lin.ee/PxMCLz6",
+      },
+      {
+        title: "Wiseipes",
+        category: "A search engine for recipes",
+        image: "wiseipes.jpg",
+        url: "https://wiseipes.com/",
       },
     ],
   },

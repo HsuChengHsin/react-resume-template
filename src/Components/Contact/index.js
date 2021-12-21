@@ -126,10 +126,7 @@ const Contact = ({ data }) => {
             </div>
           )}
         </div>
-        <aside
-          className="four columns footer-widgets"
-          style={{ marginTop: "6rem" }}
-        >
+        <aside className="four columns footer-widgets">
           <div className="widget widget_contact">
             <h4>Address and Phone</h4>
             <p className="address">
