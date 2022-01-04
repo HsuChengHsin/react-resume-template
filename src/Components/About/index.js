@@ -42,7 +42,11 @@ const About = ({ data }) => {
             </div>
             <div className="columns download">
               <p>
-                <a href="/resume.pdf" className="button" download>
+                <a
+                  href="https://line-bot-pictures-angushsu.s3.ap-northeast-1.amazonaws.com/Angus's+Resume.pdf"
+                  className="button"
+                  target="_blank"
+                >
                   <i className="fa fa-download" />
                   Download Resume
                 </a>
