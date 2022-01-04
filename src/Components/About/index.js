@@ -1,7 +1,5 @@
 import React from "react";
 
-import resume from "./resume.pdf";
-
 const About = ({ data }) => {
   const {
     name,
@@ -44,7 +42,11 @@ const About = ({ data }) => {
             </div>
             <div className="columns download">
               <p>
-                <a href={resume} className="button" download="resume.pdf">
+                <a
+                  href="https://angushsu.me/resume.pdf"
+                  className="button"
+                  download="resume.pdf"
+                >
                   <i className="fa fa-download" />
                   Download Resume
                 </a>
