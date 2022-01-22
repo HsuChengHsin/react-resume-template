@@ -1,1 +1,1 @@
-### *Web page for Angus Hsu (https://angushsu.me)*
+### *Web page of Angus Hsu (https://angushsu.me)*
