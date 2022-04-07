@@ -59,15 +59,27 @@ export const resumeData = {
     ],
     work: [
       {
+        company: "Cubewise",
+        title: "Web developer",
+        years: "Jan 2022 - Present",
+        description: [
+          "Maintain, support and enhance existing dashboard web applications for best user experience.",
+          "Collaborate with Back-End engineers to integrate new functionalities.",
+          "Actively participate in UI/UX decisions and UI components.",
+          "Build scalable, reliable, and secure web applications in ReactJS",
+          "Use modern web technologies to build webs",
+        ],
+      },
+      {
         company: "EMQ",
         title: "Software developer",
-        years: "Aug 2019 - Present",
+        years: "Aug 2019 - Jan 2022",
         description: [
           "Collaborate with Back-End engineers to integrate new functionalities.",
           "Actively participate in UI/UX decisions and UI components.",
           "Build scalable, reliable, and secure web applications.",
           "Build complex front-end logic, caching, synchronization, performance optimization.",
-          "Write software to improve web app reliability (unit tests, automated testing, e2e testing).",
+          "Write tests to improve web app reliability (unit tests, automated testing, e2e testing).",
         ],
       },
       {
@@ -111,11 +123,11 @@ export const resumeData = {
     skills: [
       {
         name: "Git",
-        level: "80%",
+        level: "90%",
       },
       {
         name: "Flask",
-        level: "75%",
+        level: "85%",
       },
       {
         name: "ReactJs",
@@ -123,11 +135,11 @@ export const resumeData = {
       },
       {
         name: "CSS",
-        level: "80%",
+        level: "90%",
       },
       {
         name: "HTML5",
-        level: "80%",
+        level: "90%",
       },
       {
         name: "Postgresql",
