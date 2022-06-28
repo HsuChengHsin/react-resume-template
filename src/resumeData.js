@@ -63,11 +63,10 @@ export const resumeData = {
         title: "Web developer",
         years: "Jan 2022 - Present",
         description: [
-          "Maintain, support and enhance existing dashboard web applications for best user experience.",
-          "Collaborate with Back-End engineers to integrate new functionalities.",
-          "Actively participate in UI/UX decisions and UI components.",
-          "Build scalable, reliable, and secure web applications in ReactJS",
-          "Use modern web technologies to build webs",
+          "Build scalable, reliable, modern and secure web applications.",
+          "Collaborate with Back-End engineers to integrate new functionalities",
+          "Build customize web dashboard applications for certain companies.",
+          "Improve the performance of web applications.",
         ],
       },
       {
@@ -98,19 +97,7 @@ export const resumeData = {
       {
         company: "EMQ",
         title: "Operation assistant",
-        years: "Jun 2018 - Dec 2018",
-        description: [
-          "Work with the team to develop, improve, and execute operational processes & procedures.",
-          "Work closely with our Network team to understand new partner integrations, define the processes & procedures & improve ongoing integrations.",
-          "Collaborate with other teams to drive system improvements that help us deliver results quicker.",
-          "Drive resolutions to complicated incidents.",
-          "Execute daily processes resolving any incidents efficiently.",
-        ],
-      },
-      {
-        company: "EMQ",
-        title: "Operation assistant intern",
-        years: "Oct 2016 - Jun 2018",
+        years: "Oct 2016 - Dec 2018",
         description: [
           "Work with the team to develop, improve, and execute operational processes & procedures.",
           "Work closely with our Network team to understand new partner integrations, define the processes & procedures & improve ongoing integrations.",
@@ -126,7 +113,7 @@ export const resumeData = {
         level: "90%",
       },
       {
-        name: "Flask",
+        name: "Python",
         level: "85%",
       },
       {
@@ -139,6 +126,10 @@ export const resumeData = {
       },
       {
         name: "HTML5",
+        level: "90%",
+      },
+      {
+        name: "javascript",
         level: "90%",
       },
       {
