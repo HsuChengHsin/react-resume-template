@@ -1,13 +1,13 @@
 import React, { Fragment } from "react";
 import "./App.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import About from "./components/About";
-import Resume from "./components/Resume";
-import Contact from "./components/Contact";
-import Testimonials from "./components/Testimonials";
-import Medium from "./components/Medium";
-import Portfolio from "./components/Portfolio";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import About from "./Components/About";
+import Resume from "./Components/Resume";
+import Contact from "./Components/Contact";
+import Testimonials from "./Components/Testimonials";
+import Medium from "./Components/Medium";
+import Portfolio from "./Components/Portfolio";
 import { resumeData } from "./resumeData";
 
 const App = () => {
