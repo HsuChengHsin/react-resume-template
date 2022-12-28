@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -15,7 +14,7 @@ const App = () => {
 	return (
 		<div className="App">
 			{resumeData && (
-				<>
+				<Fragment>
 					<Header data={resumeData.main} />
 					<About data={resumeData.main} />
 					<Resume data={resumeData.resume} />
@@ -24,7 +23,7 @@ const App = () => {
 					<Medium username={resumeData.medium.username} />
 					<Contact data={resumeData.main} />
 					<Footer data={resumeData.main} />
-				</>
+				</Fragment>
 			)}
 		</div>
 	);
