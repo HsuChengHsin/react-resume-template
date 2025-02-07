@@ -151,14 +151,14 @@ export const resumeData = {
         title: "LinkLoom",
         category:
           "A simple and fast website for shortening and managing URLs efficiently.",
-        image: "emqqq.png",
+        image: "linkloom.png",
         url: "https://linkloom.link",
       },
       {
         title: "Identique",
         category:
           "A fast and secure website for instantly validating ID numbers with accuracy and ease.",
-        image: "emqqq.png",
+        image: "identique.png",
         url: "https://identique.org",
       },
     ],
