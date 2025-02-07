@@ -38,7 +38,9 @@ const Contact = ({ data }) => {
       setSuccess(true);
       setTimeout(() => setSuccess(false), 3000);
       setContact(EMPTY_CONTENT);
-    } catch (e) {}
+    } catch (e) {
+      console.error(e);
+    }
   };
   const handleChange = (e, { name, value }) =>
     setContact((prev) => {
