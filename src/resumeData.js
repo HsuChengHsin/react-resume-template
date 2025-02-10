@@ -63,7 +63,7 @@ export const resumeData = {
         title: "Web developer",
         years: "Jan 2022 - Present",
         description: [
-          "Designed and developed a secure web application installed on client-side, ensuring adherence to security protocols such as CSRF, XSS, and data encryption.",
+          "Designed and developed an automated system capable of exporting reports to designated locations at predetermined times, streamlining data dissemination and ensuring timely access.",
           "Established of a zero-to-one web product, overseeing its progression from concept to launch using Flask, FastAPI and React.",
           "Conducted code reviews and security audits to identify and resolve vulnerabilities, ensuring the application met industry security standards.",
           "Developed a multi-page Nestjs for comprehensive yearly expense planning, enabling users to organize and track their financial goals efficiently. The application features an intuitive interface for budgeting, forecasting, and managing expenses across different categories.",
