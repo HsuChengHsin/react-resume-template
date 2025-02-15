@@ -3,9 +3,9 @@ export const resumeData = {
     name: "Angus Hsu",
     occupation: "Software engineer",
     description:
-      "I'm an experienced software engineer who constantly seeks out innovative solutions to everyday problems. In my years in this industry, I've honed my analytical thinking and collaboration skills, and I love working with a team",
+      "Innovative software developer with experience in designing, developing, and deploying scalable solutions. Skilled in front-end and back-end development, SDLC, and cross-functional collaboration. Proficient in modern languages and frameworks, focused on secure, efficient, and user-friendly applications.",
     image: "angus-self.jpg",
-    bio: "I'm an experienced software engineer who constantly seeks out innovative solutions to everyday problems. In my years in this industry, I've honed my analytical thinking and collaboration skills, and I love working with a team.",
+    bio: "Innovative software developer with experience in designing, developing, and deploying scalable solutions. Skilled in front-end and back-end development, SDLC, and cross-functional collaboration. Proficient in modern languages and frameworks, focused on secure, efficient, and user-friendly applications.",
     contactMessage:
       "Please contact me if you've any interest in what I've post here!!",
     email: "apangus611@gmail.com",
@@ -64,9 +64,9 @@ export const resumeData = {
         years: "Jan 2022 - Present",
         description: [
           "Designed and developed an automated system capable of exporting reports to designated locations at predetermined times, streamlining data dissemination and ensuring timely access.",
-          "Established of a zero-to-one web product, overseeing its progression from concept to launch using Flask, FastAPI and React.",
-          "Conducted code reviews and security audits to identify and resolve vulnerabilities, ensuring the application met industry security standards.",
-          "Developed a multi-page Nestjs for comprehensive yearly expense planning, enabling users to organize and track their financial goals efficiently. The application features an intuitive interface for budgeting, forecasting, and managing expenses across different categories.",
+          "Established a zero-to-one web product, overseeing its development from concept to launch, as an OLAP extension web service built with FastAPI and React.",
+          "Developed a multi-page web service for comprehensive yearly expense planning, enabling users to organize and track their financial goals efficiently. The application features an intuitive interface for budgeting, forecasting, and managing expenses across different categories.",
+          "Developed and designed a Next.js web page that utilizes multiple Handsontable modules with extensive custom styling, handling and organizing large amounts of table data to enhance user-friendliness and efficiency.",
         ],
       },
       {
@@ -74,11 +74,12 @@ export const resumeData = {
         title: "Software developer",
         years: "Aug 2019 - Jan 2022",
         description: [
-          "Collaborate with Back-End engineers to integrate new functionalities.",
-          "Actively participate in UI/UX decisions and UI components.",
-          "Build scalable, reliable, and secure web applications.",
-          "Build complex front-end logic, caching, synchronization, performance optimization.",
-          "Write software to improve web app reliability (unit tests, automated testing, end to end testing).",
+          "Enhanced the development experience of the internal website by migrating from jQuery to React, integrating RBAC (Role-Based Access Control) modules, and collaborating closely with backend engineers to ensure seamless implementation.",
+          "Developed a customer-facing API documentation website using OpenAPI 3.0 and ReDoc.",
+          "Developed a cross-product frontend component library using React and Storybook.",
+          "Developed an e2e testing environment for websites using Docker, TestCafe, and AWS tools.",
+          "Developed a Windows-compatible program using Puppeteer to parallelly retrieve transaction receipts from an online banking system.",
+          "Implemented an AWS SAM function to fetch daily exchange rates from the bank and update them in Google Sheets automatically.",
         ],
       },
       {
@@ -89,7 +90,6 @@ export const resumeData = {
           "Work with the team to develop, improve, and execute operational processes & procedures.",
           "Work closely with our Network team to understand new partner integrations, define the processes & procedures & improve ongoing integrations.",
           "Collaborate with other teams to drive system improvements that help us deliver results quicker.",
-          "Drive resolutions to complicated incidents.",
           "Execute daily processes resolving any incidents efficiently.",
           "Mentor, guide and train junior staff members.",
         ],
@@ -102,7 +102,6 @@ export const resumeData = {
           "Work with the team to develop, improve, and execute operational processes & procedures.",
           "Work closely with our Network team to understand new partner integrations, define the processes & procedures & improve ongoing integrations.",
           "Collaborate with other teams to drive system improvements that help us deliver results quicker.",
-          "Drive resolutions to complicated incidents.",
           "Execute daily processes resolving any incidents efficiently.",
         ],
       },
